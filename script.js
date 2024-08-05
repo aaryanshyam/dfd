@@ -9,4 +9,4 @@ document.getElementById('add-item').addEventListener('click', function() {
     row.innerHTML = `<td>${item}</td><td>${quantity}</td><td>${price}</td><td>${total}</td>`;
 
     document.getElementById('item').value = '';
-    document.getElementById
+    // document.getElementById
