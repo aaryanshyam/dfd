@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Billing Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Billing Management System</h2>
+        <form id="billing-form">
+            <div class="form-group">
+                <label for="customer-name">Customer Name</label>
+                <input type="text" class="form-control" id="customer-name" name="customer-name" required>
+            </div>
+            <div class="form-group">
+                <label for="billing-date">Billing Date</label>
+                <input type="date" class="form-control" id="billing-date" name="billing-date" required>
+            </div>
+            <div class="form-group">
+                <label for="item">Item</label>
+                <input type="text" class="form-control" id="item" name="item" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" class="form-control" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" name="price" required>
+            </div>
+            <button type="button" class="btn btn-primary" id="add-item">Add Item</button>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <table class="table mt-4">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="billing-table">
+                <!-- Items will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
